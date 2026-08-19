@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T11:06:54.020Z",
+  "generated": "2026-08-19T11:24:00.518Z",
   "repository": {
     "name": "arckit-test-nhs365"
   },
@@ -1935,6 +1935,12 @@
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0",
           "extension": ".md"
+        },
+        {
+          "path": "projects/001-nhs365/ARC-001-RISK-v1.0.md",
+          "title": "Risk Register",
+          "documentId": "ARC-001-RISK-v1.0",
+          "category": "Governance"
         }
       ],
       "audits": [],
