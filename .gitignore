@@ -1,0 +1,5 @@
+# ArcKit plugin state — machine-local session context and telemetry
+.arckit/memory/
+
+# Claude Code local overrides
+.claude/settings.local.json

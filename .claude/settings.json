@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "arckit@arckit-claude": true
+  }
+}
