@@ -1,6 +1,29 @@
 {
-  "generated": "2026-08-19T11:10:36.597Z",
+  "generated": "2026-08-19T14:24:27.983Z",
   "sessions": [
+    {
+      "ts": "2026-08-19T14:24:27.983Z",
+      "type": "governance",
+      "isFailure": false,
+      "commits": 1,
+      "filesChanged": 3,
+      "artifacts": [
+        {
+          "project": "001",
+          "categories": {
+            "Governance": [
+              "Risk Register"
+            ]
+          }
+        }
+      ],
+      "effort": "high",
+      "telemetry": {
+        "toolCalls": 17,
+        "p50": 830,
+        "p95": 4074
+      }
+    },
     {
       "ts": "2026-08-19T11:10:36.597Z",
       "type": "general",

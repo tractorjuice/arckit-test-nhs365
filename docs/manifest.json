@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T11:24:00.518Z",
+  "generated": "2026-08-19T14:25:30.189Z",
   "repository": {
     "name": "arckit-test-nhs365"
   },
@@ -1930,17 +1930,18 @@
           "extension": ".md"
         },
         {
+          "path": "projects/001-nhs365/ARC-001-RISK-v1.0.md",
+          "title": "Risk Register",
+          "category": "Governance",
+          "documentId": "ARC-001-RISK-v1.0",
+          "extension": ".md"
+        },
+        {
           "path": "projects/001-nhs365/ARC-001-STKE-v1.0.md",
           "title": "Stakeholder Analysis",
           "category": "Discovery",
           "documentId": "ARC-001-STKE-v1.0",
           "extension": ".md"
-        },
-        {
-          "path": "projects/001-nhs365/ARC-001-RISK-v1.0.md",
-          "title": "Risk Register",
-          "documentId": "ARC-001-RISK-v1.0",
-          "category": "Governance"
         }
       ],
       "audits": [],
@@ -2090,6 +2091,102 @@
           "ageDays": 0
         }
       },
+      "ARC-001-RISK-v1.0": {
+        "type": "RISK",
+        "project": "001-nhs365",
+        "path": "projects/001-nhs365/ARC-001-RISK-v1.0.md",
+        "title": "Risk Register: NHS 365",
+        "status": "DRAFT",
+        "severity": "HIGH",
+        "createdDate": "2026-08-19",
+        "lastModified": "2026-08-19",
+        "version": "1.0",
+        "owner": "Mark Craddock, Enterprise Architect",
+        "classification": "OFFICIAL",
+        "vendor": null,
+        "subdir": null,
+        "controlFields": {
+          "Document ID": "ARC-001-RISK-v1.0",
+          "Document Type": "Risk Register (HM Treasury Orange Book 2023)",
+          "Project": "NHS 365 (Project 001)",
+          "Classification": "OFFICIAL",
+          "Status": "DRAFT",
+          "Version": "1.0",
+          "Created Date": "2026-08-19",
+          "Last Modified": "2026-08-19",
+          "Review Cycle": "Monthly",
+          "Next Review Date": "2026-09-18",
+          "Owner": "Mark Craddock, Enterprise Architect",
+          "Reviewed By": "PENDING",
+          "Approved By": "PENDING",
+          "Distribution": "NHS 365 programme board; Trust executive team; Audit and Risk Committee; Clinical Safety Officer; Caldicott Guardian; SIRO; staff-side representatives",
+          "Aggregate score": "**265** / 500",
+          "Likelihood": "3 - Possible",
+          "Impact": "3 - Moderate",
+          "Inherent Risk Score": "**16** (High)",
+          "Residual Risk Score": "**9** (Medium)",
+          "Tolerate": "2",
+          "Treat": "16",
+          "Transfer": "1",
+          "Terminate": "1",
+          "A. Governance and Leadership": "⚠ Partial",
+          "B. Integration": "✅ Met",
+          "C. Collaboration and Best Information": "⚠ Partial",
+          "D. Risk Management Processes": "✅ Met",
+          "E. Continual Improvement": "✅ Met",
+          "Risk culture": "⚠ Partial",
+          "Risk appetite": "❌ Gap",
+          "Risk governance": "⚠ Partial",
+          "Risk assurance": "⚠ Partial",
+          "L=5": "5 🟩",
+          "L=4": "4 🟩",
+          "L=3": "3 🟩",
+          "L=2": "2 🟩",
+          "L=1": "1 🟩"
+        },
+        "reqIds": [
+          "FR-018",
+          "FR-002",
+          "FR-011",
+          "FR-012",
+          "FR-004",
+          "BR-001",
+          "BR-003",
+          "FR-015",
+          "BR-002",
+          "FR-016",
+          "BR-007",
+          "NFR-U-002",
+          "NFR-U-003",
+          "BR-005",
+          "BR-008",
+          "FR-010",
+          "NFR-M-003",
+          "BR-006",
+          "DR-005",
+          "BR-004",
+          "NFR-C-005",
+          "DR-003",
+          "NFR-C-001",
+          "NFR-M-002",
+          "NFR-C-003",
+          "NFR-C-004",
+          "FR-014",
+          "FR-005",
+          "FR-003",
+          "FR-006",
+          "FR-001",
+          "FR-007",
+          "NFR-P-001",
+          "NFR-U-001"
+        ],
+        "health": {
+          "stale": false,
+          "draft": true,
+          "orphan": false,
+          "ageDays": 0
+        }
+      },
       "ARC-001-STKE-v1.0": {
         "type": "STKE",
         "project": "001-nhs365",
@@ -2141,6 +2238,21 @@
         "type": "references"
       },
       {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-STKE",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-001-REQ",
+        "type": "references"
+      },
+      {
+        "from": "ARC-001-RISK-v1.0",
+        "to": "ARC-000-PRIN",
+        "type": "references"
+      },
+      {
         "from": "ARC-001-STKE-v1.0",
         "to": "ARC-000-PRIN",
         "type": "references"
@@ -2148,7 +2260,7 @@
     ]
   },
   "projectHealth": {
-    "baseline": "2026-08-19T11:06:54.027Z",
+    "baseline": "2026-08-19T14:25:30.198Z",
     "staleThresholdDays": 90,
     "essentialTypes": [
       {
@@ -2218,21 +2330,16 @@
       {
         "project": "001-nhs365",
         "projectId": "001",
-        "artifactCount": 2,
-        "edgeCount": 3,
-        "density": 1.5,
+        "artifactCount": 3,
+        "edgeCount": 6,
+        "density": 2,
         "coverage": {
           "essentialPresent": [
             "REQ",
-            "STKE"
+            "STKE",
+            "RISK"
           ],
           "essentialMissing": [
-            {
-              "type": "RISK",
-              "command": "/arckit:risk",
-              "label": "Risk Register",
-              "tier": 1
-            },
             {
               "type": "SOBC",
               "command": "/arckit:sobc",
@@ -2264,24 +2371,27 @@
               "tier": 4
             }
           ],
-          "essentialPct": 25,
+          "essentialPct": 38,
           "presentTypes": [
             "REQ",
+            "RISK",
             "STKE"
           ],
           "presentByCategory": {
-            "Discovery": 2
+            "Discovery": 2,
+            "Governance": 1
           }
         },
         "compliance": {
-          "presentHigh": [],
+          "presentHigh": [
+            "RISK"
+          ],
           "missingHigh": [
             "TCOP",
             "SECD",
             "SECD-MOD",
             "DPIA",
             "SVCASS",
-            "RISK",
             "TRAC",
             "CONF",
             "PRIN-COMP",
@@ -2289,12 +2399,12 @@
             "ATRS",
             "JSP936"
           ],
-          "pct": 0,
+          "pct": 8,
           "total": 12
         },
         "health": {
           "stale": 0,
-          "draft": 2,
+          "draft": 3,
           "orphan": 0
         },
         "contextualSuggestions": [
@@ -2322,13 +2432,6 @@
         "hasGlobalPrin": true,
         "recommendations": [
           {
-            "command": "/arckit:risk",
-            "label": "Risk Register",
-            "type": "RISK",
-            "tier": 1,
-            "reason": "Tier 1 essential missing"
-          },
-          {
             "command": "/arckit:sobc",
             "label": "Strategic Outline Business Case",
             "type": "SOBC",
@@ -2339,6 +2442,13 @@
             "command": "/arckit:adr",
             "label": "Architecture Decision Record",
             "type": "ADR",
+            "tier": 3,
+            "reason": "Tier 3 essential missing"
+          },
+          {
+            "command": "/arckit:hld-review",
+            "label": "High-Level Design Review",
+            "type": "HLDR",
             "tier": 3,
             "reason": "Tier 3 essential missing"
           }
