@@ -1,4 +1,4 @@
-# arckit-test-nhs365
+# arckit-test-project-v53-nhs365
 
 An [ArcKit](https://github.com/tractorjuice/arckit-claude) enterprise-architecture
 governance workspace for **NHS 365** — the adoption of Microsoft 365, Copilot, and
